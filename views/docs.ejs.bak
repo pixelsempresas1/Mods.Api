@@ -1,0 +1,2339 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mods Api </title>
+
+<!-- Google Font: Source Sans Pro -->
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+<link rel="stylesheet" href="fontawesome-free/css/all.min.css">
+<!-- overlayScrollbars -->
+<link rel="stylesheet" href="overlayScrollbars/css/OverlayScrollbars.min.css">
+<!-- Theme style -->
+<link rel="stylesheet" href="css/adminlte.css">
+<!-- CodeMirror -->
+<link rel="stylesheet" href="css/codemirror/codemirror.css">
+<link rel="stylesheet" href="css/codemirror/theme/monokai.css">
+</head>
+ <audio autoplay="autoplay" hidden="hidden" src="img/audio.mp3"></audio>
+<body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+<div class="wrapper">
+
+<!-- Navbar -->
+<nav class="main-header navbar navbar-expand navbar-dark">
+<!-- Left navbar links -->
+<ul class="navbar-nav">
+<li class="nav-item">
+<a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+</li>
+<li class="nav-item d-none d-sm-inline-block">
+<a href="/" class="nav-link">Inicio</a>
+</li>
+<li class="nav-item d-none d-sm-inline-block">
+<a href="http://wa.me/558296011095" class="nav-link">Contato</a>
+</li>
+</ul>
+
+<!-- Right navbar links -->
+<ul class="navbar-nav ml-auto">
+<!-- Navbar Search -->
+<li class="nav-item">
+<a class="nav-link" data-widget="navbar-search" href="#" role="button">
+<i class="fas fa-search"></i>
+</a>
+<div class="navbar-search-block">
+<form class="form-inline">
+<div class="input-group input-group-sm">
+<input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+<div class="input-group-append">
+<button class="btn btn-navbar" type="submit">
+<i class="fas fa-search"></i>
+</button>
+<button class="btn btn-navbar" type="button" data-widget="navbar-search">
+<i class="fas fa-times"></i>
+</button>
+</div>
+</div>
+</form>
+</div>
+</li>
+<!-- novo -->
+<a class="btn btn-danger" href="/planos">
+  <i class="fa fa-trash-o fa-lg"></i> ADQUIRIR KEY</a>
+</div>
+<a href="path/to/shopping/cart" class="btn btn-primary" aria-label="View 3 items in your shopping cart">
+  <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+</a>
+</div>
+<!-- Notifications Dropdown Menu -->
+</a>
+</li>
+</ul>
+</nav>
+<!-- /.navbar -->
+
+<!-- Main Sidebar Container -->
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+<!-- Brand Logo -->
+<!-- Sidebar -->
+<div class="sidebar">
+<!-- Sidebar user panel (optional) -->
+<div class="user-panel mt-3 pb-3 mb-3 d-flex">
+<div class="image">
+<img src="img/usuario.jpg" class="img-circle elevation-2" alt="usuario">
+</div>
+<div class="info">
+<a href="/perfil" class="d-block"><%= username %></a>
+</div>
+</div>
+
+<a class="nav-link" href="https://wa.me/559296011095">
+<span class="menu-icon">
+<i class="nav-icon fab fa-whatsapp"></i> 
+</span>
+<span class="menu-title">MEU WHATS</span>
+</a>
+
+<a class="nav-link" href="https://youtube.com/@Mods Api_bots2?si=UN8tw2oAdPYT1X7Z">
+<span class="menu-icon">
+<i class="nav-icon fab fa-youtube"></i> 
+</span>
+<span class="menu-title">MEU CANAL</span>
+</a>
+
+<a class="nav-link" href="/api/velocidade?apikey=<%= apikey %>">
+<span class="menu-icon">
+<i class="nav-icon fas fa-bolt"></i> 
+</span>
+<span class="menu-title">VELOCIDADE DA API</span>
+</a>
+<!-- SidebarSearch Form -->
+<div class="form-inline">
+<div class="input-group" data-widget="sidebar-search">
+<input class="form-control form-control-sidebar" type="search" placeholder="Pesquisar" aria-label="Search">
+<div class="input-group-append">
+<button class="btn btn-sidebar">
+<i class="fas fa-search fa-fw"></i>
+</button>
+</div>
+</div>
+</div>
+
+<!-- Sidebar Menu -->
+<nav class="mt-2">
+<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+<!-- Add icons to the links using the .nav-icon class
+ with font-awesome or any other icon font library -->
+<li class="nav-item">
+<a href="#" class="nav-link">
+<i class="nav-icon fas fa-download"></i>
+<p>
+ DOWNLOADS
+<i class="fas fa-angle-left right"></i>
+</p>
+</a>
+<ul class="nav nav-treeview">
+<li class="nav-item">
+<a href="/api/downloader/ytmp3v1?url=https://youtu.be/kCLyivl080g&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>YTMP3 AUDIO [1] </p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/downloader/ytmp4v1?url=https://youtu.be/kCLyivl080g&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>YTMP4 VIDEO [1]</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/ytaudio2?url=https://youtu.be/Bo3cPISQrXA?si=qwxH5ho6_wzoCbrj&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>YOUTUBE - AUDIO [2]</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/ytvideo2?url=https://youtu.be/Bo3cPISQrXA?si=qwxH5ho6_wzoCbrj&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>YOUTUBE - VIDEO [2]</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/audiomeme?query=Boa tarde&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>AUDIO MEME</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/videomeme?&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>VIDEO MEME</p>
+</a>
+<li class="nav-item">
+<a href="/download/tiktok?url=https://vm.tiktok.com/ZM2PnUh47/&Apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>TIKTOK</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/downloader/tiktokv2?url=https://vm.tiktok.com/ZMRXoPvCv/&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>TIKTOK [2]</p>
+</a>
+<li class="nav-item">
+<a href="/api/twitterdl?link=https://twitter.com/AniTrendz/status/1454825835836297228?s=20&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>TWITTER DOWN</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/downloader/fbdown?url=https://fb.watch/iu23wURoeZ/&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>FACEBOOK DOWN</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/facebook2?url=https://fb.watch/iu23wURoeZ&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>FACEBOOK DOWN [2]</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/soundl?link=https://m.soundcloud.com/raptrapbrasil/teto-mustang-preto&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>SOUND CLOUD</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/dafontdown?link=https://www.dafont.com/pt/cotton-butter.font&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>DA FONT DL</p> 
+</a>
+<li class="nav-item">
+<a href="/api/mediafire?link=https://www.mediafire.com/file/5qrvn8c87mx0z9g/MT_Manager_2.13.8_Apkpure.zip/file&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>MEDIAFIRE</p>
+</a>
+</li> 
+</ul>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link">
+<i class="nav-icon fas fa-search"></i>
+<p>
+ PESQUISAS
+<i class="fas fa-angle-left right"></i>
+</p>
+</a>
+<ul class="nav nav-treeview">
+ <li class="nav-item">
+<a href="/api/pesquisa/ytplaymp3?nome=sidoka menina linda&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>PLAY MP3</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/pesquisa/ytplaymp4?nome=sidoka menina linda&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>PLAY MP4</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/youtube/search?query=sabotage&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>YOUTUBE SEARCH</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/pinterest?nome=loli&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>PINTEREST</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/lirik?nome=joão gomes forro&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>LIRIK</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/pesquisa/letramusic?nome=no lie&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>LETRA DE MUSICA</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/signo?signo=Aquario&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>SIGNO</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/anime?nome=nagatoro&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>ANIME PLANET</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/manga?nome=nagatoro&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>ANIME PLANET MANGA</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/gpwa?apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>GRUPOS WA</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/gpsearch?nome=macacos&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>GRUPOS WA SEARCH</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/dafontsearch?nome=blood&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>DA FONTE V1</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/pesquisa/filmes?texto=avatar&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>DA FONTE V2</p>
+</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link">
+<i class="nav-icon fas fa-medal"></i>
+<p>
+ ESPORTES
+<i class="fas fa-angle-left right"></i>
+</p>
+</a>
+<ul class="nav nav-treeview">
+ <li class="nav-item">
+<a href="/api/esportes/brasileirao?&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>BRASILEIRAO</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/esporte_noticias?esporte=futebol&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>FUTEBOL</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/esporte_noticias?esporte=basquete&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>BASQUETE</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/esporte_noticias?esporte=volei&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>VOLEI</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/esporte_noticias?esporte=tenis&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>TENIS</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/esporte_noticias?esporte=atletismo&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>ATLETISMO</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/esporte_noticias?esporte=natacao&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>NATACAO</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/esporte_noticias?esporte=ciclismo&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>CICLISMO</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/esporte_noticias?esporte=boxe&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>BOXE</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/esporte_noticias?esporte=beisebol&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>BEISEBOL</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/esporte_noticias?esporte=judo&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>JUDO</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/esporte_noticias?esporte=ginastica-artistica&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>GINASTICA</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/esporte_noticias?esporte=futebol-americano&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>FUTBL AMERICANO</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/esporte_noticias?esporte=futsal&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>FUTSAL</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/esporte_noticias?esporte=golfe&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>GOLFE</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/esporte_noticias?esporte=surfe&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>SURFE</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/esporte_noticias?esporte=skate&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>SKATE</p>
+</a>
+</ul>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link">
+<i class="nav-icon fab fa-dribbble"></i>
+<p>
+ INFO JOGOS
+<i class="fas fa-angle-left right"></i>
+</p>
+</a>
+<ul class="nav nav-treeview">
+ <li class="nav-item">
+<a href="/api/e-sports_noticias?query=cod&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>COD</p>
+</a>
+<li class="nav-item">
+<a href="/api/e-sports_noticias?query=csgo&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>CSGO</p>
+</a>
+<li class="nav-item">
+<a href="/api/e-sports_noticias?query=fifa&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>FIFA</p>
+</a>
+<li class="nav-item">
+<a href="/api/e-sports_noticias?query=fortnite&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>FORTNITE</p>
+</a>
+<li class="nav-item">
+<a href="/api/e-sports_noticias?query=freefire&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>FREE FIRE</p>
+</a>
+<li class="nav-item">
+<a href="/api/e-sports_noticias?query=gamexp&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>GAMEXP</p>
+</a>
+<li class="nav-item">
+<a href="/api/e-sports_noticias?query=pes&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>PES</p>
+</a>
+<li class="nav-item">
+<a href="/api/e-sports_noticias?query=pokemon&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>POKEMON</p>
+</a>
+<li class="nav-item">
+<a href="/api/e-sports_noticias?query=rainbow-6&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>RAINBOW-6</p>
+</a>
+<li class="nav-item">
+<a href="/api/e-sports_noticias?query=volorant&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>VOLORANT</p>
+</a>
+<li class="nav-item">
+<a href="/api/e-sports_noticias?query=tcg&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>TCG</p>
+</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link">
+<i class="nav-icon fab fa-android"></i>
+<p>
+APLICATIVOS
+<i class="fas fa-angle-left right"></i>
+</p>
+</a>
+<ul class="nav nav-treeview">
+<li class="nav-item">
+<li class="nav-item">
+<a href="/api/wamod?nome=GBwhatsapp&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>WHATSAPP MOD</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/happymod?nome=amongus&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>HAPPY MOD</p>
+</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link">
+<i class="nav-icon fas fa-theater-masks"></i>
+<p>
+ SITES PORNO
+<i class="fas fa-angle-left right"></i>
+</p>
+</a>
+<ul class="nav nav-treeview">
+<li class="nav-item">
+<a href="/api/hentaigif?nome=loli&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>HENTAI GIF</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/assistiht?nome=orgasm&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>ASSISTIR HENTAIS</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/assistihtdl?link=https://www.assistirhentai.com/aku-no-onna-kanbu-full-moon-night-r/&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>ASSISTIR HENTAIS DOWN</p> 
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/hentaistube?nome=orgasm&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>HENTAIS TUBE</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/pornogratis?nome=orgasm&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>PORNO GRATIS</p> 
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/xvideos?nome=orgasm&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>XVIDEOS</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/pornhub?nome=orgasm&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>PORNHUB</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/xnxxsearch?nome=Mods Api &apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>XNXX</p>
+</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link">
+<i class="nav-icon fas fa-user-secret"></i>
+<p>
+ CONSULTAS
+<i class="fas fa-angle-left right"></i>
+</p>
+</a>
+<ul class="nav nav-treeview">
+<li class="nav-item">
+<a href="/api/consulta/ddd?ddd=62&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>DDD</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/pesquisa/correios?codigo=seu código&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>CORREIOS</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/consulta/cep?cep=01001000&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>CEP</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/consulta/ip?ip=200.149.85.1&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>IP</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/consulta/covidbr?apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>COVID BR</p>
+</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link">
+<i class="nav-icon nav-icon fas fa-tree"></i>
+<p>
+ DIVERSOES
+<i class="fas fa-angle-left right"></i>
+</p>
+</a>
+<ul class="nav nav-treeview">
+<li class="nav-item">
+<a href="/api/simih?q=bom dia?&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>SIMI</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/jogos/anagrama?apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>ANAGRAMA</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/jogos/quizanimais?apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>QUIZ ANIMAIS</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/jogos/quizanime?apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>QUIZ ANIME</p>
+</a>
+</li>
+</ul>
+</li>
+ 
+<li class="nav-item">
+<a href="#" class="nav-link">
+<i class="nav-icon fas fa-tools"></i>
+<p>
+ FERRAMENTAS
+<i class="fas fa-angle-left right"></i>
+</p>
+</a>
+<ul class="nav nav-treeview">
+<li class="nav-item">
+<a href="/api/towebp?img=https://telegra.ph/file/f44ee72c8de02f62b5146.jpg&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>WEBP</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/tools/ssweb?link=google.com&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>PRINT_SITE</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/info/translate?texto=Thank%20YOU%20Use%20REST%20Mods Api%20APIS&ling=pt&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>TRADUTOR</p>
+</a>
+</li>
+ <li class="nav-item">
+<a href="/api/tomp3?video=https://telegra.ph/file/f0d383bba9cda176f33b8.mp4&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>TOMP3</p>
+</a>
+</li>
+
+<li class="nav-item">
+<a href="/api/styleText?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>FAZER NYCK</p>
+</a>
+</li>
+ <li class="nav-item">
+<a href="/api/linkshort/bitly?link=http://Mods Api-hosting.cloud:2001/docs&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>BITLY</p>
+</a>
+</li>
+ <li class="nav-item">
+<a href="/api/linkshort/tinyurl?link=http://Mods Api-hosting.cloud:2001/docs&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>TINYURL</p>
+</a>
+</li>
+ <li class="nav-item">
+<a href="/api/linkshort/cuttly?link=http://Mods Api-hosting.cloud:2001/docs&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>CUTTLY</p>
+</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link">
+<i class="nav-icon fas fa-smile"></i>
+<p>
+ EMOJIS
+<i class="fas fa-angle-left right"></i>
+</p>
+</a>
+<ul class="nav nav-treeview">
+<li class="nav-item">
+<a href="api/emoji/apple?emoji=🗿&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>APPLE EMOJI</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="api/emoji/google?emoji=🗿&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>GOOGLE EMOJI</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="api/emoji/samsung?emoji=🗿&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>SANSUNG EMOJI</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="api/emoji/microsoft?emoji=🗿&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>MICROSOFT EMOJI</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="api/emoji/whatsapp?emoji=🗿&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>WHATSAPP EMOJI</p>
+</a>
+</li>
+ <li class="nav-item">
+<a href="api/emoji/twitter?emoji=🗿&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>TWITTER EMOJI</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="api/emoji/facebook?emoji=🗿&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>FACEBOOK EMOJI</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="api/emoji/skype?emoji=🗿&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>SKYPE EMOJI</p>
+</a>
+</li> 
+</ul>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link">
+<i class="nav-icon fas fa-paint-brush"></i>
+<p>
+ TEXTMAKER
+<i class="fas fa-angle-left right"></i>
+</p>
+</a>
+<ul class="nav nav-treeview">
+<li class="nav-item">
+<a href="/api/maker/bateria?texto=Mods Api&porcentagem=100&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>BATERIA</p>
+</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link">
+<i class="nav-icon fas fa-camera-retro"></i>
+<p>
+ PHOTOOXY
+<i class="fas fa-angle-left right"></i>
+</p>
+</a>
+<ul class="nav nav-treeview">
+<li class="nav-item">
+<a href="/api/photooxy/flaming?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>FLAMING</p> 
+</a>
+</li>
+<li class="nav-item">
+<a href="/phlogo" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>PORN HUB</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/photooxy/shadow-sky?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>SHADOW-SKY</p> 
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/photooxy/metallic?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>METALLIC</p> 
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/photooxy/naruto?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>NARUTO</p> 
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/photooxy/pubg?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>PUGB</p> 
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/photooxy/under-grass?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>UNDER-GRASS</p> 
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/photooxy/harry-potter?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>HARRY-POTTER</p> 
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/photooxy/flower-typography?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>flower-TYPOGRAPHY</p> 
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/photooxy/picture-of-love?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>PCTURE-OF-LOVE</p> 
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/photooxy/coffee-cup?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>COFFEE-CUP</p> 
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/photooxy/butterfly?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>BUTTERFLY</p> 
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/photooxy/night-sky?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>NIGHT-SKY</p> 
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/photooxy/carved-wood?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>CARVED-WOOD</p> 
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/photooxy/illuminated-metallic?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>ILLUMINATED-METALLIC</p> 
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/photooxy/sweet-candy?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>SWEET-CANDY</p> 
+</a>
+</li> 
+</ul>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link">
+ <i class="nav-icon fas fa-photo-video"></i>
+<p>
+ EPHOTO 360
+<i class="fas fa-angle-left right"></i>
+</p>
+</a>
+<ul class="nav nav-treeview">
+<li class="nav-item">
+<a href="/api/ephoto/pubgv?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>PUGB (MP4)</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/ephoto/anonovo?texto=Mods Api apis rest mensagem de ano novo&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>ANO NOVO (MP4)</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/ephoto/natalmsg?texto=Mods Apiapi rest mensagem de natal&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>NATAL-MSG (MP4)</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/ephoto/trigrev?texto=Mods Apiapi rest&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>TRIGREV (MP4)</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/ephoto/areia?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>AREIA</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/ephoto/seta?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>SETA</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/ephoto/tela?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>TELA</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/ephoto/grafite?texto=Mods Api &texto2=api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>GRAFITE</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/ephoto/blackpink?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>BLACK PINK</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/ephoto/brotoluz?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>BROTO-LUZ</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/ephoto/balckpingv2?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>BLACK-PINK V2</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/ephoto/borracha?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>BORRACHA</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/ephoto/brilhante?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>BRILHANTE</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/ephoto/papel?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>PAPEL</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/ephoto/diabo?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>Diabo</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/ephoto/urso?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>URSO</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/ephoto/blur?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>BLUR</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/ephoto/vietnam?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>VIETNAM</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/ephoto/crack?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>CRACK</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/ephoto/goldt?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>GOLDT</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/ephoto/grafit4?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>GRAFIT 4</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/ephoto/biscoito?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>BISCOITO</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/ephoto/pig?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>PIG</p>
+</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link">
+ <i class="nav-icon fas fa-images"></i>
+<p>
+ TEXTPRO
+<i class="fas fa-angle-left right"></i>
+</p>
+</a>
+<ul class="nav nav-treeview">
+<li class="nav-item">
+<a href="/api/textpro/naturalleaves?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>NATURAL-LEAVES</p>
+</a>
+</li>
+ <li class="nav-item">
+<a href="/api/textpro/candycane?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>CANDYCANE</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/textpro/lapis?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>LAPIS</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/textpro/3dchristmas?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>3DCHRISTMAS</p>
+</a>
+</li>
+ <li class="nav-item">
+<a href="/api/textpro/glitch2?texto=Mods Api&texto2=api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>GLITCH2</p>
+</a>
+</li>
+ <li class="nav-item">
+<a href="/api/textpro/glitchtiktok?texto=Mods Api&texto2=api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>GLITCHTIKTOK</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/textpro/merrychristmas?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>MERRYCHISTMAS</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/textpro/3ddeep?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>3DDEEP</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/textpro/drug?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>DRUG</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/textpro/americanflag?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>AMERICANFLAG</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/textpro/scifi?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>SCIFI</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/textpro/3drainbow?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>3DRAINBOW</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/textpro/waterpipe?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>WATERPIPE</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/textpro/skeleton?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>SKELETON</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/textpro/sketch?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>SKETCH</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/textpro/bluecircuit?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>BLUECIRCUIT</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/spacetext?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>SPACE TEXT</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/textpro/metallic?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>METALLIC</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/textpro/fiction?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>FICTION</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/textpro/green-horror?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>GREEN-HORROR</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/textpro/transformer?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>TRANSFORMER</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/textpro/berry?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>BERRY</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/thunder?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>THUNDER</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/textpro/magma?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>MAGMA</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/textpro/stone?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>STONE</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/textpro/glitch?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>GLITCH</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/embossed?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>EMBOSSED</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/broken?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>BROKEN</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/paper?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>PAPER</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/gradient?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>GRADIENT</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/glossy?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>GLOSSY</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/textpro/watercolor?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>WATERCOLOR</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/multicolor?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>MULTICOLOR</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/generator?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>GENERATOR</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/wonderful?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>WONDERFUL</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/holiday?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>HOLIDAY</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/technology?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>TECHNOLOGY</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/winter?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>WINTER</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/cloud?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>CLOUD</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/luxury?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>LUXURY</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/textpro/gradient?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>GRADIENT</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/blackpink?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>BLACKPINK</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/sandsummer?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>SAND SUMMER</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/sandwriting?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>SAND WRITING</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/textpro/sandengraved?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>SAND ENGRAVED</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/summerysand?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>SUMMERY SAND</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/glue?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>GLUE</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/dark?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>DARK</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/galaxystyle?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>GALAXYSTYLE</p>
+</a>
+</li><li class="nav-item">
+<a href="/api/textpro/neon?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>NEON</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/logobear?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>LOGOBEAR</p>
+</a>
+</li>
+<li class="nav-item">
+ <a href="/api/textpro/3dboxtext?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>3DBOX TEXT</p>
+</a>
+</li>
+ <li class="nav-item">
+ <a href="/api/textpro/3d-neon-ligh?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>3D-NEON-LIGH</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/1917?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>1917</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/minion?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>MINION</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/horrorgift?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>HORRORGIFT</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/holographic?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>HOLOGRAPHIC</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/metalpurple?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>METALPURPLE</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/deluxe?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>DELUXE</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/glossyblue?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>GLOSSY BLUE</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/deluxegold?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>DELUXEGOLD</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/glossycarbon?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>GLOSSYCARBON</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/textpro/fabric?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>FABRIC</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/neontext?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>NEON TEXT</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/blood?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>BLOOD</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/halloweenfire?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>HALLOWEEN FIRE</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/metaldark?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>METAL DARK</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/darkgold?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>DARK GOLD</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/joker?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>JOKER</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/wicker?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>WICKER</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/firework?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>FIRE WORK</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/textpro/steeltext?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>STELL TEXT</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/goldfoil?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>GOLDfOIL</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/ultragloss?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>ULTRAGLOSS</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/denimtext?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>Denimtext</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/stargreen?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>STARGREEN</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/starpurple?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>STARPUPLE</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/peridot?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>PERIDOT</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/rock?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>ROCK</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/lava?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>LAVA</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/textpro/purpleshiny?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>PURPLESHINY</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/captain?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>CAPTAIN</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/robotr2?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>ROBOTR2</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/rainbowequalizer?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>RAINBOW EQUALIZER</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/toxic?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>TOXIC</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/textpro/ninjalogo?texto=Mods Api&texto2=api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>NINJA-LOGO</p>
+</a>
+</li><li class="nav-item">
+<a href="/api/textpro/pornhub?texto=Mods Api&texto2=api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>PORN HUB</p>
+</a>
+</li>
+ <li class="nav-item">
+<a href="/api/textpro/video-game-classic?texto=Mods Api&texto2=api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>VIDEO-GAME-CLASSIC</p>
+</a>
+</li>
+ <li class="nav-item">
+<a href="/api/textpro/marvel-studios?texto=Mods Api&texto2=api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>MARVEL-STUDIOS</p>
+</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link">
+<i class="nav-icon fas fa-crown"></i>
+<p>
+ STICKER
+<i class="fas fa-angle-left right"></i>
+</p>
+</a>
+<ul class="nav nav-treeview">
+<li class="nav-item">
+<a href="/api/maker/ttp?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>TTP</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/maker/ttp2?texto=Mods Api&apikey&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>TTP [2]</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/maker/ttp3?texto=Mods Api&&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>TTP [3]</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/maker/attp?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>ATTP</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/maker/attp2?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>ATTP [2]</p>
+</a>
+</li> 
+ <li class="nav-item">
+<a href="api/maker/emojimix?emoji1=😂&emoji2=🤢&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>EMOJIMIX</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="api/maker/emojimix2?emoji=😂&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>EMOJIMIX [2]</p>
+ </a>
+</li> 
+<li class="nav-item">
+<a href="api/maker/emojimix3?emoji1=😂&emoji2=🤢&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>EMOJIMIX [3]</p>
+ </a>
+</li>    
+<li class="nav-item">
+<a href="/api/pesquisa/sticker?texto=netflix&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>STICKER ALEATORIO</p>
+</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link">
+<i class="nav-icon fas fa-hat-cowboy"></i>
+<p>
+ CANVAS
+<i class="fas fa-angle-left right"></i>
+</p>
+</a>
+<ul class="nav nav-treeview">
+<li class="nav-item">
+<a href="/api/canvas/gay?img=https://telegra.ph/file/f44ee72c8de02f62b5146.jpg&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>GAY</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/canvas/blur?img=https://telegra.ph/file/f44ee72c8de02f62b5146.jpg&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>BLUR</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/canvas/invert?img=https://telegra.ph/file/f44ee72c8de02f62b5146.jpg&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>INVERT</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/canvas/sepia?img=https://telegra.ph/file/f44ee72c8de02f62b5146.jpg&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>SEPIA</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/canvas/ad?img=https://telegra.ph/file/f44ee72c8de02f62b5146.jpg&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>AD</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/canvas/affect?img=https://telegra.ph/file/f44ee72c8de02f62b5146.jpg&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>AFFECTE</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/canvas/beautiful?img=https://telegra.ph/file/f44ee72c8de02f62b5146.jpg&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>BEAUTIFUL</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/canvas/bobross?img=https://telegra.ph/file/f44ee72c8de02f62b5146.jpg&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>BOBROSS</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/canvas/confusedStonk?img=https://telegra.ph/file/f44ee72c8de02f62b5146.jpg&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>CONFUSED STONKS</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/canvas/delete?img=https://telegra.ph/file/f44ee72c8de02f62b5146.jpg&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>DELETE</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/canvas/discordBlack?img=https://telegra.ph/file/f44ee72c8de02f62b5146.jpg&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>DISCORD BLACK</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/canvas/discordBlue?img=https://telegra.ph/file/f44ee72c8de02f62b5146.jpg&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>DISCORD BLUE</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/canvas/facepalm?img=https://telegra.ph/file/f44ee72c8de02f62b5146.jpg&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>FACEPALM</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/canvas/hitler?img=https://telegra.ph/file/f44ee72c8de02f62b5146.jpg&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>HITLER</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/canvas/jail?img=https://telegra.ph/file/f44ee72c8de02f62b5146.jpg&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>JAIL</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/canvas/karaba?img=https://telegra.ph/file/f44ee72c8de02f62b5146.jpg&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>KARABA</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/canvas/mms?img=https://telegra.ph/file/f44ee72c8de02f62b5146.jpg&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>MMS</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/canvas/notStonk?img=https://telegra.ph/file/f44ee72c8de02f62b5146.jpg&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>NOT STONK</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/canvas/poutine?img=https://telegra.ph/file/f44ee72c8de02f62b5146.jpg&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>POUTINE</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/canvas/rip?img=https://telegra.ph/file/f44ee72c8de02f62b5146.jpg&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>RIP</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/canvas/stonk?img=https://telegra.ph/file/f44ee72c8de02f62b5146.jpg&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>STONKS</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/canvas/tatoo?img=https://telegra.ph/file/f44ee72c8de02f62b5146.jpg&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>TATOO</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/canvas/thomas?img=https://telegra.ph/file/f44ee72c8de02f62b5146.jpg&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>THOMAS</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/canvas/circle?img=https://telegra.ph/file/f44ee72c8de02f62b5146.jpg&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>CIRCLE</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/canvas/kiss?img=https://telegra.ph/file/f44ee72c8de02f62b5146.jpg&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>KISS</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/canvas/batslap?img=https://telegra.ph/file/f44ee72c8de02f62b5146.jpg&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>BATSLAP</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/canvas/bed?img=https://telegra.ph/file/f44ee72c8de02f62b5146.jpg&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>BED</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/canvas/doubleStonk?img=https://telegra.ph/file/f44ee72c8de02f62b5146.jpg&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>DOUBLE STONK</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/canvas/spank?img=https://telegra.ph/file/f44ee72c8de02f62b5146.jpg&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>SPANK</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/canvas/blink?img=https://telegra.ph/file/f44ee72c8de02f62b5146.jpg&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>BLINK</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/canvas/triggered?img=https://telegra.ph/file/f44ee72c8de02f62b5146.jpg&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>TRIGGERED</p>
+</a>
+</li> 
+</ul>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link">
+<i class="nav-icon fas fa-columns"></i>
+<p>
+ CARDS
+<i class="fas fa-angle-left right"></i>
+</p>
+</a>
+<ul class="nav nav-treeview">
+<li class="nav-item">
+<a href="/api/card/welcome?nome=Mods Api&nomegp=Mods Api_APIS&membros=666&perfil=https://telegra.ph/file/692385eb5225c1be33900.jpg&fotogp=https://telegra.ph/file/4156972a1039adb9a48c9.jpg&fundo=https://telegra.ph/file/14c9a6ce9c4e3e43a8ee1.jpg&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>WELCOME</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/card/goodbye?nome=Mods Api&nomegp=Mods Api_APIS&membros=666&perfil=https://telegra.ph/file/692385eb5225c1be33900.jpg&fotogp=https://telegra.ph/file/4156972a1039adb9a48c9.jpg&fundo=https://telegra.ph/file/14c9a6ce9c4e3e43a8ee1.jpg&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>GOODBYE</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/card/promote?nome=Mods Api&nomegp=Mods Api_APIS&membros=666&perfil=https://telegra.ph/file/692385eb5225c1be33900.jpg&fotogp=https://telegra.ph/file/4156972a1039adb9a48c9.jpg&fundo=https://telegra.ph/file/14c9a6ce9c4e3e43a8ee1.jpg&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>PROMOTE</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/card/demote?nome=Mods Api&nomegp=Mods Api_APIS&membros=666&perfil=https://telegra.ph/file/692385eb5225c1be33900.jpg&fotogp=https://telegra.ph/file/4156972a1039adb9a48c9.jpg&fundo=https://telegra.ph/file/14c9a6ce9c4e3e43a8ee1.jpg&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>DEMOTE</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/card/welcomev2?nome=Mods Api&nomegp=BEM VINDO AO Mods Api_APIS&titulo=BEM VINDO&membros=666&cor=ff0000&tcor=ff0000&lcor=ff0000&perfil=https://telegra.ph/file/692385eb5225c1be33900.jpg&fundo=https://telegra.ph/file/14c9a6ce9c4e3e43a8ee1.jpg&numero=666&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>WELCOME V2</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/card/goodbyev2?nome=Mods Api&nomegp=SAIU DE Mods Api_APIS&titulo=ADEUS&membros=666&cor=ff0000&tcor=ff0000&lcor=ff0000&perfil=https://telegra.ph/file/692385eb5225c1be33900.jpg&fundo=https://telegra.ph/file/14c9a6ce9c4e3e43a8ee1.jpg&numero=666&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>GOODBYE V2</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/card/rank?nome=Mods Api&perfil=https://telegra.ph/file/4156972a1039adb9a48c9.jpg&fundo=https://telegra.ph/file/14c9a6ce9c4e3e43a8ee1.jpg&cor=red&xp=5000&fullxp=2500&rank=20&level=50&contagem=999&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>RANK</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/card/menu?nome=Mods Api&perfil=https://telegra.ph/file/4156972a1039adb9a48c9.jpg&fundo=https://telegra.ph/file/14c9a6ce9c4e3e43a8ee1.jpg&cor1=ff0000&cor2=ff0000&numero=123&titulo=MENU&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>MENU</p>
+</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link">
+<i class="nav-icon fas fa-thumbs-up"></i>
+<p>
+ MTD/EDITE
+<i class="right fas fa-angle-left"></i>
+</p>
+</a>
+<ul class="nav nav-treeview">
+<li class="nav-item">
+<a href="/api/anime/metadinha?apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>METADINHAS</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/anime/metadinha2?apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>METADINHAS 2</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/plaq?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>PLAQUINHA </p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/plaq1?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>PLAQUINHA 1</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/plaq2?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>PLAQUINHA 2</p>
+</a>   
+</li>
+<li class="nav-item">
+<a href="/api/plaq3?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>PLAQUINHA 3</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/plaq4?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>PLAQUINHA 4</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/plaq5?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>PLAQUINHA 5</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/plaq6?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>PLAQUINHA 6</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/plaq7?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>PLAQUINHA 7</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/plaq8?texto=Mods Api&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>PLAQUINHA 8</p>
+</a>
+</ul>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link">
+<i class="nav-icon fas fa-grin-hearts"></i>
+<p>
+ HENTAIS
+<i class="right fas fa-angle-left"></i>
+</p>
+</a>
+<ul class="nav nav-treeview">
+<li class="nav-item">
+<a href="/api/hentai/nsfwloli?apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>NSFW LOLI</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/hentai/ahegao?apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>AHEGAO</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/hentai/ass?apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>ASS</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/hentai/bdsm?apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>BDSM</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/hentai/blowjob?apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>BLOWJOB</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/hentai/cuckold?apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>CUCKOLD</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/hentai/cum?apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>CUM</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/hentai/ero?apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>ERO</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/hentai/femdom?apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>FEMDOM</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/hentai/gangbang?apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>GANG BANG</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/hentai/foot?apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>FOOT</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/hentai/glasses?apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>GLASSES</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/hentai/hentai?apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>HENTAI</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/hentai/hnt_gifs?apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>HENTAI GIF</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/hentai/jahy?apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>JAHY</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/hentai/masturbation?apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>MASTURBATION</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/hentai/nsfwNeko?apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>NSFW NEKO</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/hentai/orgy?apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>ORGY</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/hentai/sfwNeko?apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>NEKO</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/hentai/tentacles?apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>TENTACLES</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/hentai/thighs?apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>THIGHS</p>
+</a>
+</li> 
+<li class="nav-item">
+<a href="/api/hentai/yuri?apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>YURI</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/hentai/zettaiRyouiki?apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>ZETTAI RYOUIKI</p>
+</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link">
+<i class="nav-icon fas fa-leaf"></i>
+<p>
+ ALEATORIO
+<i class="right fas fa-angle-left"></i>
+</p>
+</a>
+<ul class="nav nav-treeview">
+<li class="nav-item">
+<a href="/api/imagens_aleatorias/dadu?apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>DADO</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/menutrava/desbanirnumero?texto=ban injustamente&motivo=ban injustamente, meu número de WhatsApp foi banido injustamente se meu número de WhatsApp não for desbanido imediatamente estarei migrando para o telegram ! Número: &email=&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>DESBANIR NMR</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/aleatorio/pensador?texto=amor&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>PENSADOR</p>
+</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link">
+<i class="nav-icon fas fa-comments"></i>
+<p>
+ BARD/GPT
+<i class="right fas fa-angle-left"></i>
+</p>
+</a>
+<ul class="nav nav-treeview">
+<li class="nav-item">
+<a href="/api/gpt?query=como fazer cafe&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>GPT</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/gpt-v2?q=como%20fazer%20cafe&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>GPT V2</p>
+</a>
+</li>
+<li class="nav-item">
+<a href="/api/bard?query=como%20fazer%20cafe&apikey=<%= apikey %>" class="nav-link">
+<i class="nav-icon far fa-circle text-warning"></i>
+<p>BARD</p>
+</a>
+</li>
+</ul>
+<!-- /.FAZER MEU MENU --> 
+</li>
+</ul>
+</nav>
+<!-- /.sidebar-menu -->
+</div>
+<!-- /.sidebar -->
+</aside>
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+<!-- Content Header (Page header) -->
+<div class="content-header">
+<div class="container-fluid">
+<div class="row mb-2">
+<div class="col-sm-6">
+<h1 class="m-0">Mods Api APIS</h1>
+</div><!-- /.col -->
+<div class="col-sm-6">
+<ol class="breadcrumb float-sm-right">
+<li class="breadcrumb-item"><a href="#">Início</a></li>
+<li class="breadcrumb-item active">Docs</li>
+</ol>
+</div><!-- /.col -->
+</div><!-- /.row -->
+</div><!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+
+<!-- Main content -->
+<section class="content">
+<div class="container-fluid">
+<!-- Info boxes -->
+<div class="row">
+<div class="col-12 col-sm-6 col-md-3">
+<div class="info-box">
+<span class="info-box-icon bg-info elevation-1"><i class="fas fa-terminal"></i></span>
+<div class="info-box-content">
+<span class="info-box-text">REQUESTS POR DIA</span>
+<span class="info-box-number">
+<%= today %>
+<small>%</small>
+</span>
+</div>
+<!-- /.info-box-content -->
+</div>
+<!-- /.info-box -->
+</div>
+<!-- /.col -->
+<div class="col-12 col-sm-6 col-md-3">
+<div class="info-box mb-3">
+<span class="info-box-icon bg-danger elevation-1"><i class="fas fa-user-check"></i></span>
+<div class="info-box-content">
+<span class="info-box-text">VISITANTES</span>
+<span class="info-box-number"><%= visitor %></span>
+</div>
+<!-- /.info-box-content -->
+</div>
+<!-- /.info-box -->
+</div>
+<!-- /.col -->
+<!-- fix for small devices only -->
+<div class="clearfix hidden-md-up"></div>
+<div class="col-12 col-sm-6 col-md-3">
+<div class="info-box mb-3">
+<span class="info-box-icon bg-success elevation-1"><i class="fas fa-infinity"></i></span>
+<div class="info-box-content">
+<span class="info-box-text">TOTAL DE REQUESTS</span>
+<span class="info-box-number"><%= total %></span>
+</div>
+<!-- /.info-box-content -->
+</div>
+<!-- /.info-box -->
+</div>
+<!-- /.col -->
+<div class="col-12 col-sm-6 col-md-3">
+<div class="info-box mb-3">
+<span class="info-box-icon bg-warning elevation-1"><i class="fas fa-users"></i></span>
+<div class="info-box-content">
+<span class="info-box-text">REGISTRADOS</span>
+<span class="info-box-number"><%= userTotal %></span>
+</div>
+<!-- /.info-box-content -->
+</div>
+<!-- /.info-box -->
+</div>
+<!-- /.col -->
+</div>
+<!-- /row -->
+<!-- /.row -->
+<div class="col-md-4">
+<!-- Info Boxes Style 2 -->
+<div class="info-box mb-3 bg-warning">
+<span class="info-box-icon"><i class="fas fa-hourglass-start"></i></span>
+<div class="info-box-content">
+<span class="info-box-text">SEU LIMITE</span>
+<span class="info-box-number"><%= limit %></span>
+</div>
+<!-- /.info-box-content -->
+</div>            
+<!-- /.info-box -->
+<div class="info-box mb-3 bg-danger">
+<span class="info-box-icon"><i class="fas fa-key"></i></span>
+<div class="info-box-content">
+<span class="info-box-text">SUA APIKEY</span>
+<span class="info-box-number"><%= apikey %></span>
+</div>
+<!-- /.info-box-content -->
+</div>    
+<!-- /.info-box -->
+<div class="info-box mb-3 bg-success">
+<span class="info-box-icon"><i class="fas fa-user"></i></span>
+<div class="info-box-content">
+<span class="info-box-text">SEU NICK</span>
+<span class="info-box-number"><%= username %></span>
+</div>
+<!-- /.info-box-content -->
+</div>
+<!-- /.info-box -->
+</div>
+<!-- /.col -->
+</div>
+        <!-- /.row -->
+<!-- Main Footer -->
+<footer class="main-footer">
+<strong>Copyright &copy; 2023-2024 <a href="https://api.whatsapp.com/send?phone=558296011095&text=Slv">Mods Api</a>.</strong>
+Todos os direitos reservados.
+<div class="float-right d-none d-sm-inline-block">
+</footer>
+</div>
+<!-- FIM,  SO OS MODULOS AGR -->
+<script src="jquery/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="js/adminlte.js"></script>
+
+<!-- PAGE public -->
+<!-- jQuery Mapael -->
+<script src="jquery-mousewheel/jquery.mousewheel.js"></script>
+<script src="raphael/raphael.min.js"></script>
+<script src="jquery-mapael/jquery.mapael.min.js"></script>
+<script src="jquery-mapael/maps/usa_states.min.js"></script>
+<!-- ChartJS -->
+<script src="chart.js/Chart.min.js"></script>
+
+<!-- AdminLTE for demo purposes -->
+<script src="js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="js/pages/dashboard2.js"></script>
+</body>
+</html>

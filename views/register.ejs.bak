@@ -1,0 +1,62 @@
+
+<!doctype html>
+<html lang="pt-br">
+<head>
+<title>REGISTRAR - JAPA APIS</title>
+<center>
+    <%- include('layouts/msg')  %> 
+    <%- include('layouts/errors')  %> 
+</center>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/css.css">
+<script>(function(w,d){!function(a,e,t,r,z){a.zarazData=a.zarazData||{},a.zarazData.executed=[],a.zarazData.tracks=[],a.zaraz={deferred:[]};var s=e.getElementsByTagName("title")[0];a.zarazData.c=e.cookie,s&&(a.zarazData.t=e.getElementsByTagName("title")[0].text),a.zarazData.w=a.screen.width,a.zarazData.h=a.screen.height,a.zarazData.j=a.innerHeight,a.zarazData.e=a.innerWidth,a.zarazData.l=a.location.href,a.zarazData.r=e.referrer,a.zarazData.k=a.screen.colorDepth,a.zarazData.n=e.characterSet,a.zarazData.o=(new Date).getTimezoneOffset(),//
+a.dataLayer=a.dataLayer||[],a.zaraz.track=(e,t)=>{for(key in a.zarazData.tracks.push(e),t)a.zarazData["z_"+key]=t[key]},a.zaraz._preSet=[],a.zaraz.set=(e,t,r)=>{a.zarazData["z_"+e]=t,a.zaraz._preSet.push([e,t,r])},a.dataLayer.push({"zaraz.start":(new Date).getTime()}),a.addEventListener("DOMContentLoaded",(()=>{var t=e.getElementsByTagName(r)[0],z=e.createElement(r);z.defer=!0,z.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(a.zarazData))),t.parentNode.insertBefore(z,t)}))}(w,d,0,"script");})(window,document);</script></head>
+<body>
+<section class="ftco-section">
+<div class="container">
+    <center>
+<div class="row justify-content-center">
+<div class="col-md-6 col-lg-4">
+<div class="login-wrap py-5">
+<div class="img d-flex align-items-center justify-content-center" style="background-image:url(https://img1.picmix.com/output/stamp/normal/7/9/2/0/1350297_277de.gif)"></div>
+<h3 class="text-center mb-0">Seja Bem Vindo(a)!</h3>
+<p class="text-center">Insira Os Dados Requiridos Abaixo Para Continuar</p>
+<form method="POST" action="/usuario/registrar">
+<form action="#" class="login-form">
+<div class="form-group">
+<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-user"></span></div>
+<input style="font-family:Arial, FontAwesome" name="username" type="text" class="form-control"" placeholder="Usuario" required>
+</div>
+<div class="form-group">
+<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-lock"></span></div>
+<input style="font-family:Arial, FontAwesome" name="password" type="password" class="form-control" placeholder="Senha" required>
+</div>
+<div class="form-group">
+    <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-lock"></span></div>
+    <input style="font-family:Arial, FontAwesome" name="confirmPassword" type="password" class="form-control" placeholder="Confirmar Senha" required>
+</div>
+<%- recaptcha %>
+<div class="form-group d-md-flex">
+</div>
+<div class="form-group">
+    <button type="submit" class="btn form-control btn-primary rounded submit px-3">LOGAR</button>
+</div>
+<p class="mb-0">Ja Tem Uma Conta?</p>
+<a href="/usuario/entrar">Entrar</a>
+</center>   
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<script src="https://preview.colorlib.com/theme/bootstrap/login-form-19/js/jquery.min.js"></script>
+<script src="https://preview.colorlib.com/theme/bootstrap/login-form-19/js/popper.js+bootstrap.min.js+main.js.pagespeed.jc.wQFdmSVNjP.js"></script><script>eval(mod_pagespeed_TzTWHL50VR);</script>
+<script>eval(mod_pagespeed_hIoZOxWKES);</script>
+<script>eval(mod_pagespeed_ci75Ifz6eT);</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6d12bfa37876f1de","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>
